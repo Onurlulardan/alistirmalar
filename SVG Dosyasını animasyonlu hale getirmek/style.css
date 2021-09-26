@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+.nav-links {
+  display: flex;
+}
+.nav-link {
+  margin: 0 0.7rem;
+}
+.banner {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*margin-top: 3rem;*/
+}
+.text h1 {
+  font-size: 5rem;
+}
+.text p {
+  margin: 2rem 0;
+}
+.text button {
+  background: #6c63ff;
+  color: white;
+  border: 0;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+.text button:hover {
+  background: #6c63ffc0;
+}
+
+#telefon {
+  animation: telefon-animasyonu 2s linear infinite;
+}
+#parca1,
+#parca2,
+#parca3 {
+  animation: parca-animasyonu 2s 0.5s linear infinite;
+}
+@keyframes parca-animasyonu {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-0.5rem);
+  }
+  40% {
+    transform: translateY(-1rem);
+  }
+  70% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes telefon-animasyonu {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-0.5rem);
+  }
+  40% {
+    transform: translateY(1rem);
+  }
+  70% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
