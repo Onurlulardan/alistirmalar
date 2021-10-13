@@ -19,7 +19,108 @@
 
 </head>
 <body>
+        <!--Modal  menu-->
+
+    <div class="modal-menu">
+        <div id="closebtn" class="closebtn"></div>
+        <div class="modal-ul-list">
+            <ul>
+                <li> <a href="#">Anasayfa</a> </li>
+                <li> <a href="#">Kurumsal</a> </li>
+                <li> <a href="#">Klinikler</a> </li>
+                <li> <a href="#">Tedavilerimiz</a> </li>
+                <li> <a href="#">Miadent Çocuk</a> </li>
+                <li> <a href="#">Sağlık Turizmi</a> </li>
+                <li> <a href="#">Medya</a> </li>
+                <li> <a href="#">İletişim</a> </li>
+            </ul>
+         </div>
+            <div class="telefonno">
+                <h3>Çağrı Merkezimiz</h3>
+                <p>444 0 642</p>
+            </div>
+            <div class="btn-modal-menu">
+                <div class="btn-modal-menu-left">
+                <a href="#"> <i class="fab fa-whatsapp"></i> Whatshapp <br> +90 444 56 42 </a>
+             </div>
+             <div class="btn-modal-menu-right">
+                <a href="#"> <i class="fas fa-map-marked-alt"></i> Yol Tarifi Al </a>
+             </div>
+            </div>
+            <div class="modal-social">
+                <ul>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-facebook-f"></a></li>
+                    <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                </ul>
+            </div>
+        
+    </div>
+    <!--Modal menu end-->
+
+    <!-- Modal menu randevu-->
+    <div class="modal-menu-randevu">
+        <div id="form-modal-closebtn" class="form-modal-closebtn"></div>
+        <div class="form-modal-modal-text">
+        <h1>Randevu Alın</h1>
+        <p>Lütfen herhangi bir tıbbi sorunuz için iletişime geçmekten çekinmeyin. Doktorlarımız acil çağrıları alacak veya geri dönecektir.</p>
+        </div>
+        <div class="form-modal">
+        <form action="">
+            <div class="form-modal-conteiner-user-form-left-form-element">
+            
+            <div class="form-modal-input-icon">
+            <i class="fas fa-puzzle-piece"></i>
+            <select name="klinik">
+                <option disabled selected value="kln">Klinik Seçiniz</option>
+                <option value="kln-1">Klinik 1</option>
+                <option value="kln-2">Klinik 2</option>
+            </select>
+            </div>
+            <div class="form-modal-input-icon">
+            <i class="fas fa-user"></i>
+            <select name="doktor">
+                <option disabled selected value="dr">Doktor Seçiniz</option>
+                <option value="dr-1">Doktor 1</option>
+                <option value="dr-2">Doktor 2</option>
+            </select>
+            </div>
+            
+            <div class="form-modal-input-icon">
+            <i class="fas fa-clipboard"></i>
+            <input type="text" placeholder="İsim">
+            </div>
+            <div class="form-modal-input-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email Adresiniz">
+            </div>
+            <div class="form-modal-input-icon">
+            <i class="fas fa-phone"></i>
+            <input type="tel" placeholder="Telefon">
+            </div>
+            <div class="form-modal-input-icon">
+            <i class="fas fa-calendar-day"></i>
+            <select name="tarih">
+                <option disabled selected value="dr">Tarih</option>
+                <option value="th-1">Tarih 1</option>
+                <option value="th-2">Tarih 2</option>
+            </select>
+            </div>
+            <div class="form-modal-input-icon-last">
+            <input id="form-modal-input-icon-last-input" type="submit" value="Randevu Oluştur" class="randevuBtn">
+            <i class="fas fa-arrow-right"></i>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    
+    <!-- Modal menu randevu end-->
+
     <div class="container-top">
+    
+
         <!--Container Top İnfo-->
         <div class="container-top-info-content">
         <div class="container-top-info">
@@ -34,7 +135,7 @@
                      <li><a href="#" class="fab fa-linkedin-in"></a></li>
                     <li><a href="#" class="fab fa-twitter"></a></li>
                     </ul>
-                    <div class="info-randevu-btn">
+                    <div id="randevubtn" class="info-randevu-btn">
                         <a href="#"> <i class="far fa-calendar"></i> Randevu Al </a>
                     </div>
                 </div>
@@ -44,7 +145,7 @@
                 <option disabled selected value="en">English</option>
                 <option value="tr">Turkish</option>
             </select>
-            <div class="hamburger-menu">
+            <div id="hamburgerbtn" class="hamburger-menu">
             </div>
         </div>
         </div>
@@ -65,26 +166,33 @@
             </ul>
         </div>
         <div class="conteiner-content-top-menu-btn">
-            <a href="#"><i class="far fa-calendar"></i> Randevu Al</a>
+            <a id="randevubtn" href="#"><i class="far fa-calendar"></i> Randevu Al</a>
         </div>
     </div>
     </div>
     <!--Owl Slider-->
-    <div class="owl-container">
-        <div class="owl-content">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
+    <div class="owlfirst owl-container">
+        <div class="owlfirst owl-content">
+            <div class="owlfirst owl-carousel owl-theme">
+                <div class="owlfirst item">
                     <img src="img/bgimg.png">
                 </div>
-                <div class="item">
+                <div class="owlfirst item">
                     <img src="img/bgimg.png">
                 </div>
-                <div class="item">
+                <div class="owlfirst item">
                     <img src="img/bgimg.png">
                 </div>
-                <div class="item">
+                <div class="owlfirst item">
                     <img src="img/bgimg.png">
                 </div>
+            </div>
+            <div class="owlfirst owl-nav">
+                <button type="button" role="presentation" class="owlfirst owl-prev"></button>
+                <button type="button" role="presentation" class="owlfirst owl-next"></button>
+            </div>
+            <div class="owl-dots">
+                <button role="button" class="owlfirst owl-dot"></button>
             </div>
         </div>
     </div>
@@ -100,14 +208,7 @@
     </div>
 
     <div class="bottom-end">
-    <!--Container slider buttons-->
-    <div class="slider-bottom-buttons-cover">
-        <button></button>
-        <button class="active"></button>
-        <button></button>
-        <button></button>
-        <button></button>
-    </div>
+    
     <div class="menu-cover-web">
         <div class="menu-content-web">
                 <div class="menu-first-web">
@@ -158,7 +259,6 @@
     </div>
     
     </div>
-    <!--Container slider End-->
     </div>
     <div class="container-body-top">
         <div class="conteiner-body-top-header">
@@ -178,69 +278,78 @@
             </div>
         </div>
     </div>
+    
     <div class="conteiner-body-center-slider">
+
         <div class="conteiner-body-center-slider-button">
             <div class="conteiner-body-center-slider-top-left">
             <h2>Hastalarımızın <br>Gülüşleri</h2>
             </div>
-            <div class="conteiner-body-center-slider-top-right">
-            <div class="slider-arrow-button-left">
-            <button><i class="fas fa-arrow-left"></i></button>
-            </div>
-            <div class="slider-arrow-button-right">
-            <button><i class="fas fa-arrow-right"></i></button>
-            </div>
-            </div>
         </div>
-        <div class="conteiner-body-center-slider-bottom">
-            <div class="conteiner-center-slider-content-first">
-                <div class="conteiner-center-text-div">
-                    <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
-                </div>
-                <div class="conteiner-center-user-div">
-                    <div class="conteiner-center-user-img"></div>
-                    <div class="conteiner-center-user-info">
-                    <p class="conteiner-center-user-name">Neslihan V.</p>
-                    <p class="conteiner-center-user-date">15 eylül 2021</p>
-                    </div>
-                </div>
+        <div class="owlsecond owl-carousel owl-theme">
+            <div class="owlsecond owl-nav">
+                <button type="button" role="presentation" class="owlsecond owl-prev"></button>
+                <button type="button" role="presentation" class="owlsecond owl-next"></button>
             </div>
-            <div class="conteiner-center-slider-content-second">
-                <div class="conteiner-center-text-div">
-                    <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
+                <div class="conteiner-body-center-slider-bottom">
+                    
+                        <div class="owlsecond item">
+                            <div class="conteiner-center-slider-content-first">
+                            <div class="conteiner-center-text-div">
+                                <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
+                            </div>
+                            <div class="conteiner-center-user-div">
+                                <div class="conteiner-center-user-img"></div>
+                                <div class="conteiner-center-user-info">
+                                <p class="conteiner-center-user-name">Neslihan V.</p>
+                                <p class="conteiner-center-user-date">15 eylül 2021</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="owlsecond item">
+                            <div class="conteiner-center-slider-content-second">
+                            <div class="conteiner-center-text-div">
+                                <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
+                            </div>
+                            <div class="conteiner-center-user-div">
+                                <div class="conteiner-center-user-img-second"></div>
+                                <div class="conteiner-center-user-info">
+                                <p class="conteiner-center-user-name">Neslihan V.</p>
+                                <p class="conteiner-center-user-date">15 eylül 2021</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="owlsecond item">
+                            <div class="conteiner-center-slider-content-third">
+                            <div class="conteiner-center-text-div">
+                                <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
+                            </div>
+                            <div class="conteiner-center-user-div">
+                                <div class="conteiner-center-user-img-third"></div>
+                                <div class="conteiner-center-user-info">
+                                <p class="conteiner-center-user-name">Neslihan V.</p>
+                                <p class="conteiner-center-user-date">15 eylül 2021</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                 </div>
-                <div class="conteiner-center-user-div">
-                    <div class="conteiner-center-user-img-second"></div>
-                    <div class="conteiner-center-user-info">
-                    <p class="conteiner-center-user-name">Neslihan V.</p>
-                    <p class="conteiner-center-user-date">15 eylül 2021</p>
-                    </div>
-                </div>
-            </div>
-            <div class="conteiner-center-slider-content-third">
-                <div class="conteiner-center-text-div">
-                    <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
-                </div>
-                <div class="conteiner-center-user-div">
-                    <div class="conteiner-center-user-img-third"></div>
-                    <div class="conteiner-center-user-info">
-                    <p class="conteiner-center-user-name">Neslihan V.</p>
-                    <p class="conteiner-center-user-date">15 eylül 2021</p>
-                    </div>
-                </div>
-            </div>
+                
         </div>
+        
     </div>
     <div class="conteiner-bottom-slider">
         <div class="conteiner-bottom-slider-header">
             <h1>Öncesi & Sonrası</h1>
             <p>Fotoğraflarımız sadece bilgilendirme amaçlıdır, rekabet amaçlı değildir.</p>
         </div>
-        <div class="conteiner-bottom-slider-content">
+            <div class="conteiner-bottom-slider-content">
             <div class="conteiner-bottom-slider-content-left"></div>
             <div class="conteiner-bottom-slider-content-right"></div>
-        </div>
-        
+                
+            </div>
     </div>
     <div class="buttons-cover">
         <div class="conteiner-bottom-slider-content-buttons">
@@ -492,8 +601,12 @@
             </div>
             <div class="footer-content-buttons-cover">
             <div class="footer-content-buttons">
+                <div class="footer-content-buttons-left">
                <a href="#" > <i class="fab fa-whatsapp"></i> Whatsapp <br> +90 444 56 42</a>
+            </div>
+            <div class="footer-content-buttons-right">
                <a href="#" > <i class="fas fa-map-marked-alt"></i> Yol Tarifi Al</a>
+            </div>
             </div>
             </div>
             <div class="footer-social-adress-mobil">
@@ -524,6 +637,46 @@
     <div class="footer-bottom-content-mobil">
             <a href="#">© 2021 miadent, tüm hakları saklıdır.</a>
     </div>
+    <!--Modal menu-->
+    <div class="modal-menu">
+        <div id="closebtn" class="closebtn"></div>
+        <div class="modal-ul-list">
+            <ul>
+                <li> <a href="#">Anasayfa</a> </li>
+                <li> <a href="#">Kurumsal</a> </li>
+                <li> <a href="#">Klinikler</a> </li>
+                <li> <a href="#">Tedavilerimiz</a> </li>
+                <li> <a href="#">Miadent Çocuk</a> </li>
+                <li> <a href="#">Sağlık Turizmi</a> </li>
+                <li> <a href="#">Medya</a> </li>
+                <li> <a href="#">İletişim</a> </li>
+            </ul>
+         </div>
+            <div class="telefonno">
+                <h3>Çağrı Merkezimiz</h3>
+                <p>444 0 642</p>
+            </div>
+            <div class="btn-modal-menu">
+                <div class="btn-modal-menu-left">
+                <a href="#"> <i class="fab fa-whatsapp"></i> Whatshapp <br> +90 444 56 42 </a>
+             </div>
+             <div class="btn-modal-menu-right">
+                <a href="#"> <i class="fas fa-map-marked-alt"></i> Yol Tarifi Al </a>
+             </div>
+            </div>
+            <div class="modal-social">
+                <ul>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-facebook-f"></a></li>
+                    <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                </ul>
+            </div>
+        
+    </div>
+
+    <!--Modal menu end-->
+
 <!--footer end-->
 <!-- owl JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
