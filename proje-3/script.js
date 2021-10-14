@@ -1,3 +1,5 @@
+
+
 const nextIcon = '<img src="img/right.svg">';
 const prevIcon = '<img src="img/left.svg">';
 
@@ -89,8 +91,17 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination',
+      },
+});
+
+  const swiper1 = new Swiper('.swiper1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-  
-    
-  });
+});
