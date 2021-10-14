@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Miadent</title>
     <!--Font-Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Google Fonts Quicksand-->
@@ -16,6 +16,11 @@
     <!--Owl Carausel-->
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="owl.theme.default.min.css">
+    <!--Swiper JS-->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
 </head>
 <body>
@@ -346,19 +351,15 @@
             <p>Fotoğraflarımız sadece bilgilendirme amaçlıdır, rekabet amaçlı değildir.</p>
         </div>
             <div class="conteiner-bottom-slider-content">
-            <div class="conteiner-bottom-slider-content-left"></div>
-            <div class="conteiner-bottom-slider-content-right"></div>
-                
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="conteiner-bottom-slider-content-left"></div></div>
+                        <div class="swiper-slide"><div class="conteiner-bottom-slider-content-right"></div></div>
+                    </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
             </div>
-    </div>
-    <div class="buttons-cover">
-        <div class="conteiner-bottom-slider-content-buttons">
-            <button></button>
-            <button class="active"></button>
-            <button></button>
-            <button></button>
-            <button></button>
-        </div>
     </div>
     <div class="conteiner-body-info-form-header">
         <h1>Kliniklerimiz</h1>
@@ -678,9 +679,12 @@
     <!--Modal menu end-->
 
 <!--footer end-->
+<!--Swiper Js-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <!-- owl JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="owl.carousel.min.js"></script>
+    <!--Script Js-->
     <script src="script.js"></script>
 </body>
 </html>

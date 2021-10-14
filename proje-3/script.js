@@ -83,3 +83,14 @@ modalrandevukapat.addEventListener("click", ()=>{
     modalrandevu.style.display = "none";
 });
 // modal randevu menu end
+
+// Swiper Js
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    
+  });
