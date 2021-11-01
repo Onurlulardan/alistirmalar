@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.header-top-info-cover {
+  height: 60px;
+  align-items: center !important;
+  padding-top: 10px;
+}
+.header-top-info-text {
+  font-size: 18px;
+  line-height: 22px;
+  color: #bababa;
+}
+.header-top-info {
+  display: flex;
+  font-size: 18px;
+  line-height: 22px;
+  color: #bababa;
+  justify-content: end;
+}
+.header-top-info span {
+  color: #919191;
+  font-weight: 700;
+}
+.header-top-info-cover ul li {
+  display: inline-block;
+}
+.header-top-info-cover ul li a {
+  color: #bababa;
+  letter-spacing: 25px;
+  display: block;
+}
+.vr {
+  height: 33px;
+}
+.header-top-info a {
+  color: #bababa;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-top-info select {
+  color: #bababa;
+  position: relative;
+  font-size: 13px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  top: -10px !important;
+}
+/* Swiper js */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev {
+  left: 281px !important;
+  color: #bababa !important;
+  font-size: 1px !important;
+  height: 45px !important;
+}
+.swiper-button-next {
+  right: 139px !important;
+  color: #bababa !important;
+  font-size: 1px !important;
+  height: 45px !important;
+}
+.swiper-button-next:active {
+  color: #00598d !important;
+}
+.swiper-button-prev:active {
+  color: #00598d !important;
+}
+.swiper-slide img {
+  height: 800px !important;
+}
+.swiper-pagination-bullet {
+  background: none;
+  border: none;
+  outline: none;
+  width: 15px !important;
+  height: 14px !important;
+  border-radius: 50% !important;
+  border: 1px solid #ffffff !important;
+  margin-left: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgba(132, 156, 163, 0) !important;
+}
+.swiper-pagination-bullet-active {
+  width: 53px !important;
+  border-radius: 50px !important;
+  background: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
