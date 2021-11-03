@@ -7,6 +7,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  height: 100vh;
 }
 ul,
 li,
@@ -31,7 +32,12 @@ a {
   font-size: 18px;
   line-height: 22px;
   color: #bababa;
-  justify-content: end;
+  /* justify-content: end; */
+}
+@media (min-width: 1200px) {
+  .header-top-info-cover .offset-xl-2 {
+    margin-left: 13.66666667%;
+  }
 }
 .header-top-info span {
   color: #919191;
@@ -95,32 +101,32 @@ a {
   height: 100%;
   object-fit: cover;
 }
-.swiper-button-prev {
+.swiper-geri {
   left: 281px !important;
   color: #bababa !important;
   font-size: 1px !important;
   height: 45px !important;
 }
-.swiper-button-next {
+.swiper-ileri {
   right: 139px !important;
   color: #bababa !important;
   font-size: 1px !important;
   height: 45px !important;
 }
-.swiper-button-next:active {
+.swiper-ileri:active {
   color: #00598d !important;
 }
-.swiper-button-prev:active {
+.swiper-geri:active {
   color: #00598d !important;
 }
 .swiper-slide img {
   height: 800px !important;
 }
-.swiper-pagination {
+.swiper-first-peg {
   position: absolute;
   bottom: 90px !important;
 }
-.swiper-pagination-bullet {
+.swiper-first-peg .swiper-pagination-bullet {
   background: none;
   border: none;
   outline: none;
@@ -133,7 +139,7 @@ a {
   cursor: pointer;
   background-color: rgba(132, 156, 163, 0) !important;
 }
-.swiper-pagination-bullet-active {
+.swiper-first-peg .swiper-pagination-bullet-active {
   width: 53px !important;
   border-radius: 50px !important;
   background: #ffffff !important;
@@ -216,6 +222,7 @@ a {
   justify-content: center;
   border-radius: 10px 0 0 10px;
   padding-right: 40px;
+  box-shadow: 0px 5px 83px rgba(9, 29, 62, 0.08);
 }
 .tedavi-content {
   display: flex;
@@ -225,6 +232,7 @@ a {
   align-items: center;
   justify-content: center;
   padding-right: 40px;
+  box-shadow: 0px 5px 83px rgba(9, 29, 62, 0.08);
 }
 .tedavi-content p {
   font-family: "Quicksand", sans-serif;
@@ -244,12 +252,13 @@ a {
   margin-left: 20px;
   margin-top: 18px !important;
 }
+
 .tedavi-content-arrow {
   position: absolute;
   width: 61px;
   height: 61px;
   background: #ffffff;
-  box-shadow: 2px 2px 20px;
+  box-shadow: 0px 0px 20px rgba(33, 51, 96, 1);
   border-radius: 50%;
   text-align: center;
   line-height: 61px;
@@ -265,6 +274,7 @@ a {
   height: 131px;
   background: #44bd55;
   border-radius: 0 10px 10px 0;
+  box-shadow: 0px 5px 83px rgba(9, 29, 62, 0.05);
 }
 .tedavi-content-last p {
   font-family: "Quicksand", sans-serif;
@@ -293,4 +303,84 @@ a {
   background: #dcf0fc;
   border-radius: 10px;
   z-index: -2;
+}
+.video-content {
+  margin-top: -107px;
+  margin-bottom: 200px;
+}
+.img-video-container-cover {
+  position: relative;
+}
+.img-video-container .video-bg {
+  height: 380px;
+  width: 580px;
+}
+.img-video-content {
+  position: absolute;
+  display: flex;
+}
+.img-video-content a {
+  position: absolute;
+  display: flex;
+  top: -80px;
+  left: 40px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.img-video-content a i {
+  font-size: 36px;
+  padding-right: 16px;
+}
+.koltuk {
+  position: absolute;
+  top: -35px;
+  height: 65px;
+  width: 64px;
+  right: -560px;
+}
+.bg-light-blue {
+  position: absolute;
+  right: 12px;
+  top: -68px;
+  width: 336px;
+  height: 336px;
+  background-color: #2b92d3;
+  opacity: 10%;
+  border-radius: 32px 32px 0 32px;
+  z-index: -1;
+}
+.video-content-logo {
+  margin-bottom: 30px;
+}
+.video-second p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #848e9f;
+  width: 445px;
+  margin-bottom: 40px;
+}
+.video-second a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #4b4b4b;
+  word-spacing: 15px;
+}
+/* second swiper */
+.second-swiper-header p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: left;
+  color: #00598d;
+}
+.swiper-second-prev {
+}
+.swiper-second-next {
 }

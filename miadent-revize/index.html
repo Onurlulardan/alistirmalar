@@ -26,7 +26,7 @@
             <div class="col-xl-6">
                 <p class="header-top-info-text">Çağrı Merkezi / Randevu: <span>444 5 642</span> </p>
             </div>
-            <div class="col-xl-6 header-top-info">
+            <div class="col-xl-4 header-top-info offset-xl-2">
                 <ul>
                     <li><a href="#" class="fab fa-instagram"></a></li>
                     <li><a href="#" class="fab fa-facebook-f"></a></li>
@@ -54,9 +54,9 @@
                       <div class="swiper-slide"><img src="img/bgimg.png"></div>
                       <div class="swiper-slide"><img src="img/bgimg.png"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next swiper-ileri"></div>
+                    <div class="swiper-button-prev swiper-geri"></div>
+                    <div class="swiper-pagination swiper-first-peg"></div>
                   </div>
             </div>
         </div>
@@ -124,23 +124,55 @@
             </div>
         </div>
     </div>
+    <!--Video Content-->
+    <div class="container video-content">
+        <div class="row">
+            <div class="col-xl-6 img-video-container-cover">
+                <div class="img-video-container">
+                    <div class="bg-light-blue"></div>
+                    <img class="video-bg" src="img/Image Container-1.png">
+                    <div class="img-video-content">
+                    <a href="#" class="img-video-text"> <i class="fab fa-youtube"></i> Hikayemizi <br> İzleyin! </a>
+                        <img class="koltuk" src="img/koltuk.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 video-second">
+                <div class="video-content-logo">
+                    <img src="img/logo.svg">
+                </div>
+                <p>2800 m2 alan üzerine kurulmuş olan 7 katlı Miadent Ağzı ve Diş Sağlığı Merkezi, kendi bünyesinde barındırdığı Ameliyathane, CAD/CAM (imalat-tasarım ve uygulama alanı), Acil bölümü, 4 adet Muayenehane ve oyun alanından oluşan çocuk katı, yetişkin muayenehaneleri, toplantı salonu, yemekhane, bekleme salonları, vale hizmeti ile tam bir sağlık merkezidir. Miadent Ağız ve Diş Sağlığı Merkezi sizlere Ağız ve Diş Sağlığı konusunda her türlü rahatsızlığınızı tek bir merkezde uzman ellerde çözebilme şansı tanıyor.</p>
+                <a href="#">Hakkımızda <i class="fas fa-arrow-right"></i> </a>
+            </div>
+        </div>
+    </div>
+    <!--Second Swiper Slider-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 second-swiper-header">
+                <p>Hastalarımızın <br> Gülüşleri</p>
+            </div>
+            <div class="col-xl-6">
+                <div class="swiper-second-prev swiper-button-prev"></div>
+                <div class="swiper-second-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--Boostrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script>
+    <!--MyScript-->
+    <script src="script.js"></script>
 </body>
 </html>
