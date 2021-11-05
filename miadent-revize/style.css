@@ -515,6 +515,10 @@ a {
   line-height: 26px;
   color: #a0a0a0;
 }
+.myThirdSwiper-cover {
+  --bs-gutter-x: 120px;
+}
+
 .third-swiper-item {
   width: 580px;
   border-radius: 8px;
@@ -552,4 +556,182 @@ a {
   border-radius: 50px !important;
   background: #00598d !important;
   border: 1px solid #00598d !important;
+}
+/* iletişim form */
+.form-cover {
+  position: relative;
+  border-radius: 22px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 83px rgba(9, 29, 62, 0.11);
+  height: 595px;
+  top: -300px;
+}
+.iletisim-form-header {
+  margin-top: 125px;
+}
+.iletisim-form-header h1 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #20325f;
+}
+.iletisim-form-header p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #a0a0a0;
+  text-align: center;
+}
+.my-card-text {
+  position: relative;
+  padding-left: 60px;
+  top: 80px;
+}
+.my-card h5 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1px;
+  text-align: left;
+  color: #0e204d;
+}
+.my-card p {
+  font-family: "Roboto", sans-serif;
+  width: 470px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #848e9f;
+  margin-top: 30px;
+}
+.conteiner-user-form-left-form-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  height: 400px;
+}
+.conteiner-user-form-left-form-element-group-1,
+.conteiner-user-form-left-form-element-group-2,
+.conteiner-user-form-left-form-element-group-3,
+.conteiner-user-form-left-form-element-group-4 {
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+}
+form .input-icon {
+  position: relative;
+  margin: 0px 15px;
+}
+form .input-icon i {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  padding: 9px 8px;
+  color: #d7d8da;
+}
+form .input-icon select,
+input {
+  padding-left: 40px;
+  color: #26365e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+}
+form .input-icon select,
+input::placeholder {
+  color: #26365e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.conteiner-user-form-left-form-element select {
+  appearance: none;
+  cursor: pointer;
+  background: #ffffff url("img/arrow.png") no-repeat !important;
+  background-position: 210px 50% !important;
+}
+.conteiner-user-form-left-form-element select,
+input {
+  width: 250px;
+  height: 60px;
+  outline: none;
+  background: #ffffff;
+  border: 2px solid #e6e8eb;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.conteiner-user-form-left-form-element select:hover,
+input:hover {
+  border: none;
+}
+.conteiner-user-form-left-form-element-group-4 .input-icon-last input {
+  background: #00598d;
+  color: #ffffff;
+}
+form .input-icon-last i {
+  position: absolute;
+  right: 210px;
+  bottom: 18px;
+  padding: 9px 8px;
+  color: #ffffff;
+}
+.conteiner-user-form-left-form-element-group-4 .randevuBtn {
+  width: 530px;
+  height: 71px;
+  outline: none;
+  border-radius: 35px;
+  box-shadow: 2px 2px 6px rgba(3, 21, 50, 0.05);
+}
+.form-right {
+  background: linear-gradient(
+    to right,
+    rgba(29, 42, 77, 0.08),
+    rgba(29, 42, 77, 0)
+  );
+}
+.form-text-cover {
+  position: relative;
+  left: 70px;
+  top: 70px;
+  width: 440px;
+  height: 475px;
+  border-radius: 0px 22px 22px 22px;
+  background: #44bd55;
+}
+.form-text-cover h3 {
+  padding-left: 60px;
+  padding-top: 60px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 51px;
+  color: #ffffff;
+}
+.form-text-cover p {
+  padding-left: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+.form-iletisim-text {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.form-iletisim-text i {
+  margin-right: 10px;
+}
+.form-text-cover a {
+  margin-left: 60px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.bgmap {
+  margin-top: 20px;
 }
