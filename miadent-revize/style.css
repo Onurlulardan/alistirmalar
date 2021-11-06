@@ -735,3 +735,156 @@ form .input-icon-last i {
 .bgmap {
   margin-top: 20px;
 }
+/* Four Swiper */
+.four-slider {
+  margin-top: -160px;
+}
+.four-slider-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #20325f;
+}
+.four-slider-header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #848e9f;
+}
+.swiper-four-prev,
+.swiper-four-next {
+  margin-top: -50px !important;
+}
+.four-swiper-content {
+  display: flex;
+  border-radius: 10px;
+}
+.four-swiper-content:hover {
+  border: 1px solid #e2e2e2;
+}
+.four-swiper-content-img img {
+  width: 235px;
+  height: 273px !important;
+}
+.four-swiper-content-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 15px;
+}
+.four-swiper-content-text .four-content-text-f-p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #00598d;
+  margin-top: 15px;
+}
+.four-swiper-content-text h4 {
+  font-size: 21px;
+  font-family: "Quicksand", sans-serif;
+  line-height: 32px;
+  font-weight: 700;
+  color: #26365e;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+.four-content-text-s-p {
+  height: 80px;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 25px;
+  color: #848e9f;
+  margin-bottom: 25px;
+}
+.four-swiper-content-text button {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  width: 135px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ffffff;
+  outline: none;
+  border: none;
+  color: #00598d;
+  font-size: 15px;
+}
+.four-swiper-content-text button:hover {
+  background: #00598d;
+  color: #ffffff;
+  box-shadow: 2px 2px 6px rgba(3, 21, 50, 0.05);
+}
+.four-swiper-content-text button i {
+  padding-left: 8px;
+  font-size: 15px;
+  line-height: 40px;
+}
+/* Turizm content */
+.container-turizm {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.turizm-content {
+  background: url("img/turizm.png") no-repeat;
+  background-size: contain;
+  height: 590px;
+}
+.turizm-content h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 82px;
+  color: #ffffff;
+  padding-left: 55px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.turizm-content p {
+  width: 580px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #ffffff;
+  padding-left: 55px;
+}
+.turizm-content button {
+  margin-left: 880px;
+  background: #00598d;
+  color: #ffffff;
+  box-shadow: 2px 2px 6px rgba(3, 21, 50, 0.05);
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  width: 135px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+.turizm-content button i {
+  padding-left: 8px;
+  font-size: 15px;
+  line-height: 40px;
+}
+/* last Swiper */
+.last-swiper-header {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #0e204d;
+  text-align: left;
+}
+.last-swiper-slide {
+}
+.last-swiper-slide img {
+  height: 90px !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  object-fit: cover !important;
+}
+.last-swiper-slide:hover {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}

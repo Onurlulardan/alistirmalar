@@ -64,3 +64,50 @@ var swiper = new Swiper(".myThirdSwiper", {
   mousewheel: true,
   keyboard: true,
 });
+// Four Swiper 
+var swiper = new Swiper(".myFourSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  cssMode: true,
+  clickable: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-four-next',
+    prevEl: '.swiper-four-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  }
+});
+var swiper = new Swiper(".last-swiper", {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  cssMode: true,
+  clickable: true,
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+  }
+});
