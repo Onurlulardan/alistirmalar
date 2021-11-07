@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-    loop: true,
+    loop: false,
     cssMode: true,
     clickable: true,
     navigation: {
