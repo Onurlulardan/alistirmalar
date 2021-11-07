@@ -47,6 +47,10 @@ var swiper = new Swiper(".myThirdSwiper", {
   pagination: {
     el: ".third-Slider-peg",
   },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -92,22 +96,29 @@ var swiper = new Swiper(".myFourSwiper", {
 });
 var swiper = new Swiper(".last-swiper", {
   slidesPerView: 6,
-  spaceBetween: 20,
+  spaceBetween: 40,
   cssMode: true,
   clickable: true,
   loop: true,
+  fadeEffect: { 
+    crossFade: true,
+  },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 6,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
     768: {
       slidesPerView: 6,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
     1024: {
       slidesPerView: 6,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
   }
 });
