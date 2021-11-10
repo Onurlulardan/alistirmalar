@@ -182,11 +182,9 @@ a {
     width: 160px;
     padding-right: 50px;
   }
-  .container-list li a {
-    font-size: 12px !important;
-  }
+
   .randevu-btn {
-    margin-left: 0px !important;
+    margin-left: -10px !important;
     width: 135px !important;
   }
 }
@@ -341,6 +339,7 @@ p {
 .img-video-container-cover {
   position: relative;
 }
+
 .img-video-container .video-bg {
   height: 380px;
   width: 580px;
@@ -380,6 +379,16 @@ p {
   opacity: 10%;
   border-radius: 32px 32px 0 32px;
   z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .bg-light-blue {
+    right: -180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bg-light-blue {
+    right: -280px;
+  }
 }
 .video-content-logo {
   margin-bottom: 30px;
@@ -432,6 +441,16 @@ p {
   border: 3px solid #c4c4c4;
   border-radius: 50% !important;
   cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .swiper-second-prev {
+    left: 800px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-second-prev {
+    left: 550px !important;
+  }
 }
 .swiper-second-prev i {
   color: #c4c4c4;
@@ -766,6 +785,36 @@ form .input-icon-last i {
   margin-top: 20px;
   padding-left: 200px;
 }
+@media screen and (max-width: 768px) {
+  .outher-form {
+    display: none;
+  }
+  .container-list {
+    display: none;
+  }
+  .randevu-btn {
+    display: none;
+  }
+  .swiper-ileri {
+    display: none !important;
+  }
+  .swiper-geri {
+    display: none !important;
+  }
+  .slider-text {
+    /* font-size: 26px; */
+  }
+  .website-map ul {
+    display: none;
+  }
+  .iletisim-form-header {
+    margin-top: 20px;
+  }
+  .container-turizm {
+    display: none;
+  }
+}
+
 /* Four Swiper */
 .four-slider {
   margin-top: -160px;
