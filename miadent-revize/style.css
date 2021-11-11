@@ -177,17 +177,7 @@ a {
     margin-left: 0px;
   }
 }
-@media screen and (min-width: 768px) {
-  .container-logo {
-    width: 160px;
-    padding-right: 50px;
-  }
 
-  .randevu-btn {
-    margin-left: -10px !important;
-    width: 135px !important;
-  }
-}
 .container-list {
   display: flex;
   height: 100%;
@@ -229,6 +219,17 @@ a {
   position: relative;
   top: -770px;
   z-index: 9999;
+}
+@media screen and (max-width: 768px) {
+  .container-logo {
+    width: 160px;
+    padding-right: 50px;
+  }
+
+  .randevu-btn {
+    margin-left: -10px;
+    width: 135px;
+  }
 }
 /* slider text */
 
@@ -615,6 +616,58 @@ p {
   height: 595px;
   top: -300px;
 }
+.turizm-content-mobil {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .turizm-content-mobil {
+    display: flex;
+    background-image: url("img/bgmap.png");
+    background-repeat: no-repeat;
+    background-position: 30% 40px;
+  }
+  .turizm-content-mobil-content {
+    background-image: url("img/turizm-mobil.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 766px;
+    margin-top: 350px;
+  }
+  .turizm-content-mobil-content h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 41px;
+    padding-top: 30px;
+    padding-left: 10px;
+    color: #ffffff;
+  }
+  .turizm-content-mobil-content p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #ffffff;
+    width: 322px;
+    height: 178px;
+    margin-bottom: 410px;
+  }
+  .turizm-content-mobil-content button {
+    background: #00598d;
+    color: #ffffff;
+    box-shadow: 2px 2px 6px rgb(3 21 50 / 5%);
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    width: 122px;
+    height: 37px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    margin-left: 100px;
+  }
+}
 .iletisim-form-header {
   margin-top: 125px;
 }
@@ -633,11 +686,13 @@ p {
   color: #a0a0a0;
   text-align: center;
 }
+
 .my-card-text {
   position: relative;
   padding-left: 60px;
   top: 80px;
 }
+
 .my-card h5 {
   font-family: "Quicksand", sans-serif;
   font-size: 24px;
@@ -785,6 +840,48 @@ form .input-icon-last i {
   margin-top: 20px;
   padding-left: 200px;
 }
+.outher-form {
+  height: 900px;
+}
+@media screen and (max-width: 1024px) {
+  .my-card-text {
+    padding-left: 0px;
+  }
+  form .input-icon {
+    margin: 0px 5px;
+  }
+  .conteiner-user-form-left-form-element select,
+  input {
+    width: 200px;
+  }
+  .conteiner-user-form-left-form-element select {
+    background: #ffffff url(img/arrow.png) no-repeat !important;
+    background-position: 160px 50% !important;
+  }
+  .conteiner-user-form-left-form-element-group-4 .randevuBtn {
+    width: 430px;
+    height: 71px;
+    outline: none;
+    border-radius: 35px;
+    box-shadow: 2px 2px 6px rgb(3 21 50 / 5%);
+  }
+  .form-text-cover {
+    left: 20px;
+  }
+  .outher-form {
+    height: 700px;
+  }
+  .turizm-content h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 82px;
+    color: #ffffff;
+    padding-left: 15px !important;
+    padding-top: 20px !important;
+    padding-bottom: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .outher-form {
     display: none;
@@ -800,9 +897,6 @@ form .input-icon-last i {
   }
   .swiper-geri {
     display: none !important;
-  }
-  .slider-text {
-    /* font-size: 26px; */
   }
   .website-map ul {
     display: none;
@@ -951,6 +1045,17 @@ form .input-icon-last i {
   font-size: 15px;
   line-height: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .turizm-content h1 {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .turizm-content button {
+    left: 620px;
+    bottom: -10px;
+  }
+}
 /* last Swiper */
 .last-swiper-cont {
   margin-bottom: 80px;
@@ -1061,4 +1166,46 @@ form .input-icon-last i {
   line-height: 20px;
   color: #ffffff !important;
   cursor: pointer;
+}
+.website-map-mobil {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .last-swiper-header {
+    margin-top: 40px;
+  }
+  .last-swiper-header h2 {
+    text-align: center;
+  }
+  .website-map {
+    display: none;
+  }
+  .website-map-mobil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .website-map-mobil ul li {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .website-map-mobil ul li a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #eaeaea;
+    line-height: 24px;
+  }
+  .website-map-mobil h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fefefe;
+    line-height: 51px;
+  }
+  .website-map-mobil p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #ffffff;
+  }
 }

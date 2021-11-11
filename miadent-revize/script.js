@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
   });
  // second swiper
  var swiper = new Swiper(".mySecondSwiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   cssMode: true,
   clickable: true,
@@ -40,7 +40,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 // third swiper
 var swiper = new Swiper(".myThirdSwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   loop: true,
   cssMode: true,
   clickable: true,
@@ -70,7 +70,7 @@ var swiper = new Swiper(".myThirdSwiper", {
 });
 // Four Swiper 
 var swiper = new Swiper(".myFourSwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
   cssMode: true,
   clickable: true,
@@ -95,7 +95,7 @@ var swiper = new Swiper(".myFourSwiper", {
   }
 });
 var swiper = new Swiper(".last-swiper", {
-  slidesPerView: 6,
+  slidesPerView: 1,
   spaceBetween: 40,
   cssMode: true,
   clickable: true,
