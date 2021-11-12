@@ -1,3 +1,4 @@
+// First Slider
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     cssMode: true,
@@ -54,7 +55,7 @@ var swiper = new Swiper(".myThirdSwiper", {
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 1,
