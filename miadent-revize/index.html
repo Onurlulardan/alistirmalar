@@ -8,7 +8,7 @@
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--Fonts-Roboto-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!--Fonts-Quicksands-->
@@ -19,9 +19,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--Modal Video-js-->
+    <link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
 
 </head>
 <body>
+    <!--Modal Randevu-->
+    <div class="container modal-menu-randevu-con">
+        <div class="row">
+            <div class="col-8">
+                <div class="modal-menu-randevu">
+                    <div id="form-modal-closebtn" class="form-modal-closebtn"></div>
+                    <h1>Randevu Alın</h1>
+                    <p>Lütfen herhangi bir tıbbi sorunuz için iletişime geçmekten çekinmeyin. Doktorlarımız acil çağrıları alacak veya geri dönecektir.</p>
+                    <form action="">
+                        <div class="form-modal-conteiner-user-form-left-form-element">
+                            <div class="form-modal-input-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <select name="klinik">
+                                    <option disabled selected value="kln">Klinik Seçiniz</option>
+                                    <option value="kln-1">Klinik 1</option>
+                                    <option value="kln-2">Klinik 2</option>
+                                </select>
+                            </div>
+                            <div class="form-modal-input-icon">
+                                <i class="fas fa-user"></i>
+                                <select name="doktor">
+                                    <option disabled selected value="dr">Doktor Seçiniz</option>
+                                    <option value="dr-1">Doktor 1</option>
+                                    <option value="dr-2">Doktor 2</option>
+                                </select>
+                            </div>
+                            <div class="form-modal-input-icon">
+                                <i class="fas fa-clipboard"></i>
+                                <input type="text" placeholder="İsim">
+                            </div>
+                            <div class="form-modal-input-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="tel" placeholder="Telefon">
+                            </div>
+                            <div class="form-modal-input-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="email" placeholder="Email Adresiniz">
+                            </div>
+                            <div class="form-modal-input-icon">
+                                <i class="fas fa-calendar-day"></i>
+                                <select name="tarih">
+                                    <option disabled selected value="dr">Tarih</option>
+                                    <option value="th-1">Tarih 1</option>
+                                    <option value="th-2">Tarih 2</option>
+                                </select>
+                            </div>
+                            <div class="form-modal-input-icon-last">
+                                <input type="submit" value="Randevu Oluştur" class="randevuBtn form-modal-input-icon-last-input">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Menu-->
+    <div class="container-fluid modal-menu-randevu-cons">
+        <div class="row">
+            <div class="col-12">
+                <div id="closebtn" class="closebtn"></div>
+                <div class="mod-list-top">
+                    <ul>
+                        <li><a href="#">Kurumsal</a></li>
+                        <li><a href="#">Klinikler</a></li>
+                        <li><a href="#">Tedavilerimiz</a></li>
+                        <li><a href="#">Miadent Çocuk</a></li>
+                        <li><a href="#">Sağlık Turizmi</a></li>
+                        <li><a href="#">Medya</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                    <h3>Çağrı Merkezimiz</h3>
+                    <p>444 5 642</p>
+                </div>
+                <div class="col-xl-8 offset-xl-4 col-md-6 offset-md-3 d-flex">
+                    <button type="button" class="d-flex footer-button">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>Whatsapp <br> +90 444 56 42</p>
+                    </button>
+                    <button type="button" class="d-flex footer-button">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p class="footer-button-p">Yol Tarifi Al</p>
+                    </button>
+                </div>
+                <div class="mod-list-bottom">
+                    <ul>
+                        <li><a href="#" class="fab fa-instagram"></a></li>
+                        <li><a href="#" class="fab fa-facebook-f"></a></li>
+                        <li><a href="#" class="fab fa-twitter"></a></li>
+                        <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header Top İnfo -->
     <div class="container">
         <div class="row header-top-info-cover">
@@ -43,7 +140,7 @@
                     <option  disabled selected value="en">English</option>
                     <option value="tr">Turkish</option>
                 </select>
-                <div class="modalmenu-mob">
+                <div id="modalmenu-mob" class="modalmenu-mob">
                     <img src="img/hamburgermenu.svg" >
                 </div>
             </div>
@@ -172,8 +269,8 @@
                 <div class="img-video-container">
                     <div class="bg-light-blue"></div>
                     <img class="video-bg" src="img/Image Container-1.png">
-                    <div class="img-video-content">
-                    <a href="#" class="img-video-text"> <i class="fab fa-youtube"></i> Hikayemizi <br> İzleyin! </a>
+                    <div class="img-video-content ">
+                    <a href="#" class="img-video-text modalVid" data-video-id="LrSJPrk4eqo"> <i class="fab fa-youtube"></i> Hikayemizi <br> İzleyin!</a>
                         <img class="koltuk" src="img/koltuk.png">
                     </div>
                 </div>
@@ -637,19 +734,15 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="modal-menu-randevu">
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <!--Modal Video-js-->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--Boostrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!--MyScript-->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
