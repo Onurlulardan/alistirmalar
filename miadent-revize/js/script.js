@@ -152,4 +152,4 @@ modalinfokapat.addEventListener("click", ()=>{
 });
 // modal menu end
 // Modal Video
-  $(".modalVid").modalVideo();
+  new ModalVideo('.modalVid');

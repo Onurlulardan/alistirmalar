@@ -122,9 +122,6 @@ a {
     margin-left: 20px;
   }
 }
-@media screen and (max-width: 576px) {
-}
-
 /* Swiper js */
 .swiper {
   width: 100%;
@@ -406,7 +403,11 @@ p {
     bottom: 70px !important;
   }
 }
-
+@media screen and (max-width: 390px) {
+  .slider-bottom-menu-mobil {
+    margin-left: 10px;
+  }
+}
 .slider-bottom-menu-mobil img {
   padding-right: 10px;
 }
@@ -606,6 +607,11 @@ p {
     width: 350px;
   }
 }
+@media screen and (max-width: 390px) {
+  .bg-light-blue {
+    right: 10px;
+  }
+}
 /* second swiper */
 .second-slider-container {
   position: relative;
@@ -763,6 +769,11 @@ p {
     line-height: 34px;
   }
 }
+@media screen and (max-width: 390px) {
+  .swiper-second-prev {
+    left: 500px !important;
+  }
+}
 /* Third Slider */
 .Third-Slider-header {
   text-align: center;
@@ -848,13 +859,13 @@ p {
     display: flex;
   }
   .turizm-content-mobil-content {
-    background-image: url("img/turizm-mobil.png");
+    background-image: url("../img/turizm-mobil.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 766px;
   }
   .turizm-content-mobil-img {
-    background-image: url("img/bgmap.png");
+    background-image: url("../img/bgmap.png");
     background-repeat: no-repeat;
     background-position: 30% -40px;
     height: 250px;
@@ -898,6 +909,12 @@ p {
   .turizm-content-mobil-content {
     margin-left: 30px;
     width: 390px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .turizm-content-mobil-content {
+    margin-left: 10px;
+    width: 370px;
   }
 }
 .iletisim-form-header {
@@ -987,7 +1004,7 @@ input::placeholder {
 .conteiner-user-form-left-form-element select {
   appearance: none;
   cursor: pointer;
-  background: #ffffff url("img/arrow.png") no-repeat !important;
+  background: #ffffff url("../img/arrow.png") no-repeat !important;
   background-position: 210px 50% !important;
 }
 .conteiner-user-form-left-form-element select,
@@ -1087,7 +1104,7 @@ form .input-icon-last i {
     width: 200px;
   }
   .conteiner-user-form-left-form-element select {
-    background: #ffffff url(img/arrow.png) no-repeat !important;
+    background: #ffffff url("../img/arrow.png") no-repeat !important;
     background-position: 160px 50% !important;
   }
   .conteiner-user-form-left-form-element-group-4 .randevuBtn {
@@ -1528,7 +1545,7 @@ form .input-icon-last i {
 .form-modal-closebtn {
   width: 40px;
   height: 40px;
-  background: url("img/modalclose.svg");
+  background: url("../img/modalclose.svg");
   background-color: #00598d;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1538,6 +1555,7 @@ form .input-icon-last i {
   margin-left: 460px;
   cursor: pointer;
 }
+
 .modal-menu-randevu h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 24px;
@@ -1573,7 +1591,7 @@ form .input-icon-last i {
   line-height: 50px;
   appearance: none;
   cursor: pointer;
-  background: #ffffff url("img/arrow.png") no-repeat !important;
+  background: #ffffff url("../img/arrow.png") no-repeat !important;
   background-position: 315px 50% !important;
 }
 .form-modal-input-icon input {
@@ -1635,7 +1653,7 @@ form .input-icon-last i {
   padding-left: 40px;
 }
 .closebtn {
-  background: url("img/modalclose.svg");
+  background: url("../img/modalclose.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1693,5 +1711,23 @@ form .input-icon-last i {
   }
   .modal-menu-randevu-cons {
     padding-left: 0px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .modal-menu-randevu {
+    margin-left: 0px;
+    width: 370px;
+  }
+  .form-modal-closebtn {
+    margin-left: 320px;
+  }
+  .footer-button {
+    margin-left: 10px;
+  }
+  .closebtn {
+    margin-left: 340px;
+  }
+  #randevubtn-mobil {
+    font-size: 14px;
   }
 }
