@@ -588,7 +588,7 @@ p {
   }
   .bg-light-blue {
     top: -30px;
-    right: 40px;
+    right: 30px;
     width: 166px;
     height: 166px;
   }
@@ -1712,6 +1712,9 @@ form .input-icon-last i {
   .modal-menu-randevu-cons {
     padding-left: 0px;
   }
+  .video-content-logo {
+    margin-left: 15px;
+  }
 }
 @media screen and (max-width: 390px) {
   .modal-menu-randevu {
@@ -1729,5 +1732,64 @@ form .input-icon-last i {
   }
   #randevubtn-mobil {
     font-size: 14px;
+  }
+  .social-footer-mobil {
+    margin-left: 90px;
+  }
+  .video-content-logo {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .slider-bottom-menu-mobil {
+    width: 350px;
+  }
+  .slider-bottom-menu-mobil {
+    margin-left: 0px;
+  }
+  .div-mob-top-f,
+  .div-mob-top-s,
+  .div-mob-bottom-f,
+  .div-mob-bottom-s {
+    padding-right: 15px;
+  }
+  .video-second p {
+    width: 340px;
+  }
+  .swiper-second-prev {
+    left: 455px !important;
+  }
+  .turizm-content-mobil-content {
+    margin-left: 5px;
+    width: 340px;
+  }
+  .img-video-container {
+    margin-left: 0px;
+  }
+  .bg-light-blue {
+    right: -5px;
+  }
+  .modal-menu-randevu {
+    margin-left: 0px;
+    width: 370px;
+  }
+  .form-modal-closebtn {
+    margin-left: 320px;
+  }
+  .footer-button {
+    margin-left: 10px;
+  }
+  .closebtn {
+    margin-left: 340px;
+  }
+  #randevubtn-mobil {
+    font-size: 10px;
+  }
+
+  .social-footer-mobil {
+    margin-left: 70px;
+  }
+  .video-content-logo {
+    margin-left: 10px;
   }
 }
