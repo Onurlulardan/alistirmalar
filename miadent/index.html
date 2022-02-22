@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miadent</title>
+    <!--Css-->
+    <link rel="stylesheet" href="master.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <!--Fancy-Box-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+    <!--modal section-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="modal-menu">
+                    <div id="modal-kapat" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="modal-list">
+                        <ul>
+                            <li> 
+                                <a href="#">Anasayfa</a>
+                            </li>
+                            <li> 
+                                <a href="#">Kurumsal</a>
+                            </li>
+                            <li> 
+                                <a href="#">Klinikler </a>
+                            </li>
+                            <li> 
+                                <a href="#">Tedavilerimiz</a>
+                            </li>
+                            <li> 
+                                <a href="#">Miadent Çocuk</a>
+                            </li>
+                            <li> 
+                                <a href="#">Sağlık Turizmi</a>
+                            </li>
+                            <li> 
+                                <a href="#">Medya</a>
+                            </li>
+                            <li> 
+                                <a href="#">İletişim</a>
+                            </li>
+                        </ul>
+                        <div class="modal-phone">
+                            <p>Çağrı Merkezimiz</p>
+                            <h1>444 5 642</h1>
+                        </div>
+                        <div class="footer-btn">
+                            <div class="footer-btn-content">
+                                <label>
+                                    <div class="icon-box">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    </div>
+                                    <a href="#">
+                                        Whatsapp <br>
+                                        +90 444 56 42</a>
+                                </label>
+                            </div>
+                            <div class="footer-btn-content">
+                                <label>
+                                    <div class="icon-box">
+                                        <i class="fa-solid fa-map-location-dot sploc"></i>
+                                    </div>
+                                    <a href="#">
+                                        Yol Tarifi Al</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-social-btn">
+                            <div class="footer-social-icon">
+                                <ul>
+                                    <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="randevu-modal">
+                    <div id="randevu-kapat" class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="form-left-box-content modal-randevu">
+                        <h1>Randevu Alın</h1>
+                        <p>Lütfen herhangi bir tıbbi sorunuz için iletişime geçmekten çekinmeyin. <br> Doktorlarımız acil çağrıları alacak veya geri dönecektir.</p>
+                        <div class="form-element">
+                            <label>
+                                <div class="nav-wrapper">
+                                    <i class="fa-solid fa-puzzle-piece"></i>
+                                    <div class="sl-nav">
+                                    <ul>
+                                        <li><b>Klinik Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><span class="active">Klinik 1</span></li>
+                                            <li><span>Klinik 2</span></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <div class="nav-wrapper">
+                                    <i class="fa-solid fa-user"></i>
+                                    <div class="sl-nav">
+                                    <ul>
+                                        <li><b>Doktor Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><span class="active">Doktor 1</span></li>
+                                            <li><span>Doktor 2</span></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <label>
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-book"></i>
+                                    <input type="text" placeholder="İsim">
+                                </div>
+                            </label>
+                            <label>
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" placeholder="E-mail Adresiniz">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <label>
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="phone" placeholder="Telefon">
+                                </div>
+                            </label>
+                            <label>
+                                <div class="nav-wrapper">
+                                    <i class="fa-solid fa-calendar-day"></i>
+                                    <div class="sl-nav">
+                                    <ul>
+                                        <li><b>Tarih Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><span class="active">Tarih 1</span></li>
+                                            <li><span>Tarih 2</span></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element-last">
+                            <a href="#"> Randevu Oluştur <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div id="modal-form" class="form-left-box">
+                    <div class="form-left-box-content">
+                        <h1>Randevu Alın</h1>
+                        <p>Lütfen herhangi bir tıbbi sorunuz için iletişime geçmekten çekinmeyin. <br> Doktorlarımız acil çağrıları alacak veya geri dönecektir.</p>
+                        <div class="form-element">
+                            <label>
+                                <div class="nav-wrapper">
+                                    <i class="fa-solid fa-puzzle-piece"></i>
+                                    <div class="sl-nav">
+                                    <ul>
+                                        <li><b>Klinik Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><span class="active">Klinik 1</span></li>
+                                            <li><span>Klinik 2</span></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <div class="nav-wrapper">
+                                    <i class="fa-solid fa-user"></i>
+                                    <div class="sl-nav">
+                                    <ul>
+                                        <li><b>Doktor Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><span class="active">Doktor 1</span></li>
+                                            <li><span>Doktor 2</span></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <label>
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-book"></i>
+                                    <input type="text" placeholder="İsim">
+                                </div>
+                            </label>
+                            <label>
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" placeholder="E-mail Adresiniz">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <label>
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="phone" placeholder="Telefon">
+                                </div>
+                            </label>
+                            <label>
+                                <div class="nav-wrapper">
+                                    <i class="fa-solid fa-calendar-day"></i>
+                                    <div class="sl-nav">
+                                    <ul>
+                                        <li><b>Tarih Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <div class="triangle"></div>
+                                        <ul>
+                                            <li><span class="active">Tarih 1</span></li>
+                                            <li><span>Tarih 2</span></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-element-last">
+                            <a href="#"> Randevu Oluştur <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section-cover">
+    <section>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navbar-top">
+                            <div class="navbar-top-left">
+                                <p>  Çağrı Merkezi / Randevu: <span> 444 5 642 </span> </p>
+                                <img src="img/logo.svg">
+                            </div>
+                            <div class="navbar-top-right">
+                                <ul class="navbar-right-ul">
+                                    <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+                                    <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                                </ul>
+                                <ul class="navbar-right-ul-select">
+                                    <li>
+                                        <i class="fas fa-globe"></i>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <a href="#">English</a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div  class="hamburger-menu">
+                                    <a id="rndv-btn" href="#">  
+                                        <i class="fa-solid fa-calendar"></i>
+                                        Randevu Al
+                                    </a>
+                                    <img id="hamburger" src="img/hamburgermenu.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="outher-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 p-0 slider-cover">
+                        <div class="container slider-menu-cover">
+                            <div class="slider-menu">
+                                <div class="slider-menu-logo">
+                                    <img src="img/logo.svg">
+                                </div>
+                                <div class="slider-menu-right">
+                                    <ul>
+                                        <li> <a href="#">Anasayfa</a> </li>
+                                        <li> <a href="#">Kurumsal</a> </li>
+                                        <li> <a href="#">Klinikler</a> </li>
+                                        <li> <a href="#">Miadent Çocuk</a> </li>
+                                        <li> <a href="#">Tedaviler</a> </li>
+                                        <li> <a href="#">Sağlık Turizmi</a> </li>
+                                        <li> <a href="#">İletişim</a> </li>
+                                    </ul>
+                                    <div class="slider-menu-randevu">
+                                        <ul>
+                                            <li> <a data-fancybox data-src="#modal-form" href="javascript:void(0)">
+                                                <!-- <i class="fa-solid fa-calendar"></i> -->
+                                                <img src="img/iconcalendar.svg">
+                                                Randevu Al</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper myfirstswiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <img class="main-img" src="img/bgimg.png">
+                                  <img class="mobil-img" src="img/mobilbgimg.png">
+                              </div>
+                              <div class="swiper-slide">
+                                <img class="main-img" src="img/bgimg.png">
+                                  <img class="mobil-img" src="img/mobilbgimg.png">
+                              </div>
+                              <div class="swiper-slide">
+                                <img class="main-img" src="img/bgimg.png">
+                                  <img class="mobil-img" src="img/mobilbgimg.png">
+                              </div>
+                            </div>
+                            <div class="first-slider-header">
+                                <h1>Gülüşünüz bizim <br>
+                                    mutluluğumuz :)</h1>
+                            </div>
+                            <div class="swiper-button-prev first-navprev"></div>
+                            <div class="swiper-button-next first-navnext"></div>
+                            <div class="swiper-pagination swiper-first-peg"></div>
+                        </div>
+                        <div class="container bar-menu-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="first-slider-bar-menu">
+                                        <div class="first-slider-bar-menu-content-cover">
+                                            <div class="first-slider-bar-menu-content ">
+                                                <img src="img/diş1.svg">
+                                                <a href="#">İmplant Tedavisi</a>
+                                            </div>
+                                            <div class="first-slider-bar-menu-content">
+                                                <img src="img/diş2.svg">
+                                                <a href="#">
+                                                    Zirkonyum Tedavisi
+                                                </a>
+                                            </div>
+                                            <div class="first-slider-bar-menu-content ">
+                                                <img src="img/diş3.svg">
+                                                <a href="#">Laminate Tedavisi</a>
+                                            </div>
+                                            <div class="first-slider-bar-menu-content bar-menu-content-last">
+                                                <div class="bar-menu-arrow">
+                                                    <a href="#">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <a href="#">Diğer Tedavilerimiz</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="mobil-bar-menu">
+                                        <div class="mobil-bar-menu-content-top">
+                                            <div class="mobil-bar-menu-content-top-inner left">
+                                                <img src="img/mdis1.svg">
+                                                <a href="#"> İmplant
+                                                    Tedavisi </a>
+                                            </div>
+                                            <div class="mobil-bar-menu-content-top-inner right">
+                                                <img src="img/mdis2.svg">
+                                                <a href="#"> Zirkonyum
+                                                    Tedavisi </a>
+                                            </div>
+                                        </div>
+                                        <div class="mobil-bar-menu-content-bottom">
+                                            <div class="mobil-bar-menu-content-bottom-inner left-s">
+                                                <img src="img/mdis3.svg">
+                                                <a href="#"> Laminate
+                                                    Tedavisi </a>
+                                            </div>
+                                            <div class="mobil-bar-menu-content-bottom-inner right-s">
+                                                <div class="bar-menu-arrow">
+                                                    <a href="#">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <a href="#"> Diğer 
+                                                    Tedavilerimiz </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider-bottom-header">
+                        <h1>Daha <span>sağlıklı dişler</span> ile yaşam <br>kalitenizi iyileştiriyoruz.</h1>
+                    </div>
+                    <div class="slider-bottom-content-cover">
+                        <div class="slider-bottom-content-left">
+                            <div class="slider-bottom-content-img-div"> 
+                            <img src="img/bottomslider.png">
+                            <div class="hikaye">
+                                <a data-fancybox href="https://youtu.be/XIMLoLxmTDw"> <i class="fab fa-youtube"></i> Hikayemizi <br> izleyin! </a>
+                            </div>
+                            <div class="koltuk">
+                                <img src="img/koltuk.png">
+                            </div>
+                            </div>
+                            <div class="blue-box"></div>
+                        </div>
+                        <div class="slider-bottom-content-right">
+                            <img src="img/logo.svg">
+                            <p>2800 m2 alan üzerine kurulmuş olan 7 katlı Miadent Ağzı ve Diş Sağlığı Merkezi, kendi bünyesinde barındırdığı Ameliyathane, CAD/CAM (imalat-tasarım ve uygulama alanı), Acil bölümü, 4 adet Muayenehane ve oyun alanından oluşan çocuk katı, yetişkin muayenehaneleri, toplantı salonu, yemekhane, bekleme salonları, vale hizmeti ile tam bir sağlık merkezidir. Miadent Ağız ve Diş Sağlığı Merkezi sizlere Ağız ve Diş Sağlığı konusunda her türlü rahatsızlığınızı tek bir merkezde uzman ellerde çözebilme şansı tanıyor.</p>
+                            <a href="#">
+                                Hakkımızda <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="second-slider-header-cover">
+                        <div class="second-slider-header">
+                            <h1>Hastalarımızın <br>
+                                Gülüşleri</h1>
+                        </div>
+                        <div class="slider-arrow-btn">
+                            <div class="swiper-second-prev">  <i class="fas fa-arrow-left"></i>  </div>
+                            <div class="swiper-second-next"> <i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-lg-12 mt-5">
+                    <div class="swiper mysecondswiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="second-slider-box">
+                                  <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
+                                  <div class="second-slider-box-bottom">
+                                      <img src="img/userpic.png">
+                                      <div class="second-slider-box-inner">
+                                          <h6>Neslihan V.</h6>
+                                          <p>15 eylül 2021</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="second-slider-box">
+                                <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
+                                <div class="second-slider-box-bottom">
+                                    <img src="img/userpic2.png">
+                                    <div class="second-slider-box-inner">
+                                        <h6>Neslihan V.</h6>
+                                        <p>15 eylül 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="second-slider-box">
+                                <p>Donec congue sit amet nisl ac pharetra. Phasellus vestibulum ex in porttitor venenatis. Curabitur quis luctus sem. Curabitur efficitur augue mi, non tempus felis mattis condimentum. </p>
+                                <div class="second-slider-box-bottom">
+                                    <img src="img/userpic3.png">
+                                    <div class="second-slider-box-inner">
+                                        <h6>Neslihan V.</h6>
+                                        <p>15 eylül 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="third-slider-header">
+                        <h1>Öncesi & Sonrası</h1>
+                        <p>Fotoğraflarımız sadece bilgilendirme amaçlıdır, rekabet amaçlı değildir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="swiper mythirdslider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="third-slider-img-box">
+                                  <img class="left-img" src="img/humanleft.png">
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="third-slider-img-box">
+                                <img class="right-img" src="img/humanright.png">
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="third-pagination-cover">
+                        <div class="thirdswiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-header">
+                        <h1>Kliniklerimiz</h1>
+                        <p>Hastalarımızın ve sağlık ekibimizin hijyeni her zaman önceliğimiz olacaktır,  bu nedenle<br> Kovid-19 için  en iyi uygulamaları takip ediyoruz.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="map-box">
+                        <img  src="img/bgmap.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-box-cover">
+                        <div class="form-box">
+                            <div class="form-left-box">
+                                <div class="form-left-box-content">
+                                    <h1>Randevu Alın</h1>
+                                    <p>Lütfen herhangi bir tıbbi sorunuz için iletişime geçmekten çekinmeyin. <br> Doktorlarımız acil çağrıları alacak veya geri dönecektir.</p>
+                                    <div class="form-element">
+                                        <label>
+                                            <div class="nav-wrapper">
+                                                <i class="fa-solid fa-puzzle-piece"></i>
+                                                <div class="sl-nav">
+                                                <ul>
+                                                    <li><b>Klinik Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><span class="active">Klinik 1</span></li>
+                                                        <li><span>Klinik 2</span></li>
+                                                    </ul>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label>
+                                            <div class="nav-wrapper">
+                                                <i class="fa-solid fa-user"></i>
+                                                <div class="sl-nav">
+                                                <ul>
+                                                    <li><b>Doktor Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><span class="active">Doktor 1</span></li>
+                                                        <li><span>Doktor 2</span></li>
+                                                    </ul>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-element">
+                                        <label>
+                                            <div class="input-icon">
+                                                <i class="fa-solid fa-book"></i>
+                                                <input type="text" placeholder="İsim">
+                                            </div>
+                                        </label>
+                                        <label>
+                                            <div class="input-icon">
+                                                <i class="fa-solid fa-envelope"></i>
+                                                <input type="email" placeholder="E-mail Adresiniz">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-element">
+                                        <label>
+                                            <div class="input-icon">
+                                                <i class="fa-solid fa-phone"></i>
+                                                <input type="phone" placeholder="Telefon">
+                                            </div>
+                                        </label>
+                                        <label>
+                                            <div class="nav-wrapper">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <div class="sl-nav">
+                                                <ul>
+                                                    <li><b>Tarih Seçiniz</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                    <div class="triangle"></div>
+                                                    <ul>
+                                                        <li><span class="active">Tarih 1</span></li>
+                                                        <li><span>Tarih 2</span></li>
+                                                    </ul>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-element-last">
+                                        <a href="#"> Randevu Oluştur <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-right-box">
+                                <div class="right-text-box">
+                                    <h1>Çağrı Merkezimiz</h1>
+                                    <p>Herhangi bir tıbbi sorunuz için lütfen yardımsever personelimizle iletişime geçmekten çekinmeyin.</p>
+                                    <div class="text-box-contact">
+                                        <a href="#"> <i class="fa-solid fa-phone"></i> Randevu: 444 5 642 </a>
+                                        <a href="#"> <i class="fa-brands fa-whatsapp"></i> Whatsapp: 0507 743 61 18 </a>
+                                        <a href="#"> <i class="fa-solid fa-clock"></i> Hafta içi: 08:00 - 17:00  </a>
+                                    </div>
+                                    <a href="#">İletişim <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mobil-turizm">
+                        <img src="img/turizmobil.png">
+                        <div class="mobil-turizm-box-content">
+                            <h1>SAĞLIK <br>
+                                TURİZMİ</h1>
+                            <p>Mükemmel coğrafi konumu ile Türkiye, birçok ülkeden kısa sürede ve kolayca ulaşılabilir. Türkiye, geçmişinden gelen misafirperverlik geleneğini sağlık turizmindeki hizmet anlayışına da aktarmıştır. Tedavi için Türkiye’ye gelen misafirler, ülkeye ayak bastığı andan evine uğurlanana dek ihtiyaç duyabileceği her türlü hizmet, uzman sağlık personeli ve acente yetkilileri tarafından karşılanmaktadır.</p>
+                            <div class="turizm-btn-mobil">
+                                <a href="#"> Daha Fazlası <i class="fas fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="second-slider-header-cover">
+                        <div class="second-slider-header">
+                            <h1>Medya Merkezi
+                                </h1>
+                                <p>Haberler, Duyurular</p>
+                        </div>
+                        <div class="slider-arrow-btn">
+                            <div class="swiper-second-prev four-prev">  <i class="fas fa-arrow-left"></i>  </div>
+                            <div class="swiper-second-next four-next"> <i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="swiper myfourswiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="media-box">
+                                    <img class="main-img" src="img/imgmakale1.png">
+                                    <img class="mobil-img" src="img/mobilmedia.png">
+                                    <div class="media-box-inner">
+                                        <h6>28 Ocak 2021</h6>
+                                        <h1>İMPLANT NEDİR?</h1>
+                                        <p>İmplant; eksik dişlerin yerine konması amacıyla, çene kemiğine yerleştirilen vida şeklindeki yapay bir diş köküdür. Çene kemiği titanyumu vücudun bir parçası olarak algıladığından, implantlar ço-ğunlukla titanyumdan yapılmaktadır ve implantların yüksek doku uyumu nedeniyle başarı oranı oldukça yüksektir. Diş hekimliğinde çok yaygın kullanım alanı bulma nedeni; tek diş eksikliklerin-den, hiç dişi olmayan hastalara kadar, çok geniş bir yelpazede uygulanabilir olmasıdır. Bu uygula-ma, komşu dişlere hiç müdahale edilmeden gerçekleştirilir. Gerek çiğneme hissinin normale en yakın olması, gerekse diğer dişlere müdahale etmeden tedavi imkanı yaratması; yaşadığımız yüz-yılda implant içeren yöntemleri, en çok uygulanan tedavi yöntemlerinden biri haline getirmiştir.</p>
+                                        <a href="#"> Daha Fazlası <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="media-box">
+                                    <img class="main-img" src="img/imgmakale1.png">
+                                    <img class="mobil-img" src="img/mobilmedia.png">
+                                    <div class="media-box-inner">
+                                        <h6>28 Ocak 2021</h6>
+                                        <h1>İMPLANT NEDİR?</h1>
+                                        <p>İmplant; eksik dişlerin yerine konması amacıyla, çene kemiğine yerleştirilen vida şeklindeki yapay bir diş köküdür. Çene kemiği titanyumu vücudun bir parçası olarak algıladığından, implantlar ço-ğunlukla titanyumdan yapılmaktadır ve implantların yüksek doku uyumu nedeniyle başarı oranı oldukça yüksektir. Diş hekimliğinde çok yaygın kullanım alanı bulma nedeni; tek diş eksikliklerin-den, hiç dişi olmayan hastalara kadar, çok geniş bir yelpazede uygulanabilir olmasıdır. Bu uygula-ma, komşu dişlere hiç müdahale edilmeden gerçekleştirilir. Gerek çiğneme hissinin normale en yakın olması, gerekse diğer dişlere müdahale etmeden tedavi imkanı yaratması; yaşadığımız yüz-yılda implant içeren yöntemleri, en çok uygulanan tedavi yöntemlerinden biri haline getirmiştir.</p>
+                                        <a href="#"> Daha Fazlası <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="turizm-box">
+                        <img src="img/turizm.png">
+                        <div class="turizm-box-content">
+                            <h1>SAĞLIK <br>
+                                TURİZMİ</h1>
+                            <p>Mükemmel coğrafi konumu ile Türkiye, birçok ülkeden kısa sürede ve kolayca ulaşılabilir. Türkiye, geçmişinden gelen misafirperverlik geleneğini sağlık turizmindeki hizmet anlayışına da aktarmıştır. Tedavi için Türkiye’ye gelen misafirler, ülkeye ayak bastığı andan evine uğurlanana dek ihtiyaç duyabileceği her türlü hizmet, uzman sağlık personeli ve acente yetkilileri tarafından karşılanmaktadır.</p>
+                        </div>
+                        <div class="turizm-btn">
+                            <a href="#"> Daha Fazlası <i class="fas fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>  
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="last-slider-header">
+                        <h1>Anlaşmalı Olduğumuz <br>
+                            Kurumlar
+                            </h1>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="swiper mylastslider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="last-slide-box">
+                                  <img src="img/borusan.png">
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="last-slide-box">
+                                <img src="img/enerji.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="last-slide-box">
+                                <img src="img/halkbank.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="last-slide-box">
+                                <img src="img/mytechnic1.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="last-slide-box">
+                                <img src="img/pendik.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="last-slide-box">
+                                <img src="img/turktelekom.png">
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section>
+        <footer>
+            <div class="outher-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-box-cover">
+                                <div class="footer-box">
+                                    <h1>Kurumsal</h1>
+                                    <ul>
+                                        <li> <a href="#">
+                                            Hakkımızda
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Vizyon, Misyon, Değerler
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Ekibimiz
+                                        </a></li>
+                                        <li> <a href="#">
+                                            DC Kariyer
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Çözüm Ortaklarımız
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Kalite Yönetim Birimimiz
+                                        </a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-box">
+                                    <h1>Kliniklerimiz</h1>
+                                    <ul>
+                                        <li> <a href="#">
+                                            Çankaya
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Keçiören
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Batıkent
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Gölbaşı
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Yenimahalle
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Eryaman
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Natoyolu
+                                        </a></li>
+                                    </ul>
+                                </div>  
+                                <div class="footer-box">
+                                    <h1>Tedavilerimiz</h1>
+                                    <ul>
+                                        <li> <a href="#">
+                                            Dental İmplant
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Sedasyon
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Estetik Diş Hekimliği
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Dijital Diş Hekimliği
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Pedodonti
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Endodonti
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Ortodonti
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Periodontoloji
+                                        </a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-box">
+                                    <h1>Medya</h1>
+                                    <ul>
+                                        <li> <a href="#">
+                                            Haberler
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Videolar
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Bilgi Merkezi
+                                        </a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-box">
+                                    <h1>Sağlık Turizmi</h1>
+                                    <ul>
+                                        <li> <a href="#">
+                                            
+                                        </a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-box">
+                                    <h1>İletişim</h1>
+                                    <ul>
+                                        <li> <a href="#">
+                                            İletişim Bilgileri
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Görüş ve Önerileriniz
+                                        </a></li>
+                                        <li> <a href="#">
+                                            Harita
+                                        </a></li>
+                                        <div class="footer-social-icon">
+                                            <ul>
+                                                <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+                                                <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                                                <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+                                                <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="modal-phone mobile-foot">
+                                <p>Çağrı Merkezimiz</p>
+                                <h1>444 5 642</h1>
+                            </div>
+                            <div class="footer-btn">
+                                <div class="footer-btn-content">
+                                    <label>
+                                        <div class="icon-box">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        </div>
+                                        <a href="#">
+                                            Whatsapp <br>
+                                            +90 444 56 42</a>
+                                    </label>
+                                </div>
+                                <div class="footer-btn-content">
+                                    <label>
+                                        <div class="icon-box">
+                                            <i class="fa-solid fa-map-location-dot sploc"></i>
+                                        </div>
+                                        <a href="#">
+                                            Yol Tarifi Al</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-social-btn mobile-foot">
+                                <div class="footer-social-icon">
+                                    <ul>
+                                        <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+                                        <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                                        <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+                                        <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom-box">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        © 2021 miadent, tüm hakları saklıdır.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Site Haritası
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Kullanım Koşulları
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Gizlilik ve Güvenlik
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </footer>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="footer-mobil-bottom-end">
+                <ul>
+                    <li>
+                        <a href="#">
+                            © 2021 miadent, tüm hakları saklıdır.
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--Fancy-Box-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!--Script.js-->
+    <script src="master.js"></script>
+</body>
+</html>
