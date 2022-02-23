@@ -1,5 +1,5 @@
 const swiper = new Swiper('.firstSwiper', {
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
     mousewheel: {
         invert: true,
@@ -7,10 +7,15 @@ const swiper = new Swiper('.firstSwiper', {
     pagination: {
         el: '.first-peg',
     },
+    breakpoints: {
+        450: {
+            direction: 'vertical',
+        },
+     },
 });
 
 const swiper1 = new Swiper('.secondSwiper', {
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
     mousewheel: {
         invert: true,
@@ -18,11 +23,16 @@ const swiper1 = new Swiper('.secondSwiper', {
     pagination: {
         el: '.first-peg',
     },
+    breakpoints: {
+        450: {
+            direction: 'vertical',
+        },
+     },
 });
 const swiper2 = new Swiper('.thirdswiper', {
-    slidesPerView: 6,
+    slidesPerView: 1,
     spaceBetween: 20,
-    slidesOffsetBefore: 200,
+    slidesOffsetBefore: 0,
     direction: 'horizontal',
     pagination: {
         el: '.first-peg',
@@ -31,15 +41,27 @@ const swiper2 = new Swiper('.thirdswiper', {
         el: '.swiper-scrollbar',
         draggable: true,
       },
+      breakpoints: { 
+        1024: {
+            slidesPerView: 3,
+            slidesOffsetBefore: 200,
+        },
+        1450: {
+            slidesPerView: 6,
+            slidesOffsetBefore: 200,
+        },
+      },
 });
 
 
   $(".hamburger").on( "click", function() {
     $(".modal-menu").css("display", "flex");
+    $(".main-cover").css("display", "none");
   });
  
 $(".mdl-close").on("click", function(){
     $(".modal-menu").css("display", "none");
+    $(".main-cover").css("display", "block");
 });
 
 
