@@ -28,6 +28,7 @@ const swiper1 = new Swiper('.secondSwiper', {
             direction: 'vertical',
         },
      },
+     
 });
 const swiper2 = new Swiper('.thirdswiper', {
     slidesPerView: 1,
@@ -68,7 +69,7 @@ $(".mdl-close").on("click", function(){
 
 
 
-swiper1.on('transitionEnd', function(e) {
+swiper1.on('transitionStart', function(e) {
     if (this.realIndex == 1) {
         document.querySelector("body").style.background = '#F4F1C1';
     }
@@ -88,7 +89,7 @@ swiper1.on('transitionEnd', function(e) {
 
 
 
-swiper1.on('transitionEnd', function(e) {
+swiper1.on('transitionStart', function(e) {
     if (this.realIndex == 1) {
         document.querySelector(".swiper-slide").style.setProperty('background-color', '#F4F1C1', 'important');
     }

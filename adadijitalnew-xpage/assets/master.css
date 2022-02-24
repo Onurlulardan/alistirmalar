@@ -2,7 +2,8 @@
   font-family: "FuturaPT";
   src: url("/fonts/FuturaPTLight.otf");
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,10 @@ html,
 body {
   font-size: 16px;
   height: 100vh;
-  font-family: "FuturaPT", sans-serif !important;
+  /* font-family: "FuturaPT", sans-serif !important; */
+  /* font-family: "FuturaPT", sans-serif !important; */
+  font-family: "Raleway", sans-serif !important;
+  /* font-family: "Mulish", sans-serif; */
   /* font-family: "Open Sans Condensed", sans-serif !important; */
 }
 ul,
@@ -190,7 +194,7 @@ footer {
   /*position: absolute !important;*/
   position: relative;
   left: -6px !important;
-  top: -5px !important;
+  top: -6px !important;
   display: block;
 }
 .swiper-left-btn {
@@ -809,6 +813,9 @@ footer {
   }
   .header-right {
     padding-top: 15px;
+  }
+  .header-right > ul > .ul-menu {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
