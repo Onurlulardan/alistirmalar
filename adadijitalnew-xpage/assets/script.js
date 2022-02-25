@@ -1,4 +1,5 @@
 const swiper = new Swiper('.firstSwiper', {
+    slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
     mousewheel: {
@@ -6,6 +7,7 @@ const swiper = new Swiper('.firstSwiper', {
     },
     pagination: {
         el: '.first-peg',
+        clickable:true,
     },
     breakpoints: {
         450: {
@@ -66,43 +68,43 @@ $(".mdl-close").on("click", function(){
 });
 
 
-
-
-
-swiper1.on('transitionStart', function(e) {
-    if (this.realIndex == 1) {
-        document.querySelector("body").style.background = '#F4F1C1';
-    }
-    if (this.realIndex == 2) {
-        document.querySelector("body").style.background = '#DCDDDE';
-    }
-    if (this.realIndex == 3) {
-        document.querySelector("body").style.background = '#ECEBDF';
-    }
-    if (this.realIndex == 4) {
-        document.querySelector("body").style.background = '#F2E3E3';
-    }
-    if (this.realIndex == 5) {
-        document.querySelector("body").style.background = '#D0EFF0';
-    }
-    });
-
-
+//Çözümlerimiz 
+$(document).ready(function () {
+    $(".solition").css("background-color", "#F45458");
+});
 
 swiper1.on('transitionStart', function(e) {
     if (this.realIndex == 1) {
-        document.querySelector(".swiper-slide").style.setProperty('background-color', '#F4F1C1', 'important');
+        document.querySelector(".solition").style.background = '#E63342';
     }
     if (this.realIndex == 2) {
-        document.querySelector(".swiper-slide").style.setProperty('background-color', '#DCDDDE', 'important');
+        document.querySelector(".solition").style.background = '#477BFE';
     }
     if (this.realIndex == 3) {
-        document.querySelector(".swiper-slide").style.setProperty('background-color', '#ECEBDF', 'important');
+        document.querySelector(".solition").style.background = '#2FC7F7';
     }
     if (this.realIndex == 4) {
-        document.querySelector(".swiper-slide").style.setProperty('background-color', '#F2E3E3', 'important');
-    }
-    if (this.realIndex == 5) {
-        document.querySelector(".swiper-slide").style.setProperty('background-color', '#D0EFF0', 'important');
+        document.querySelector(".solition").style.background = '#477BFE';
     }
     });
+
+    swiper1.on('transitionStart', function(e) {
+        if (this.realIndex == 1) {
+            document.querySelector(".swiper-slide").style.setProperty('background-color', '#E63342', 'important',);
+        }
+        if (this.realIndex == 2) {
+            document.querySelector(".swiper-slide").style.setProperty('background-color', '#477BFE', 'important');
+        }
+        if (this.realIndex == 3) {
+            document.querySelector(".swiper-slide").style.setProperty('background-color', '#2FC7F7', 'important');
+        }
+        if (this.realIndex == 4) {
+            document.querySelector(".swiper-slide").style.setProperty('background-color', '#477BFE', 'important');
+        }
+        });
+
+
+
+
+
+
