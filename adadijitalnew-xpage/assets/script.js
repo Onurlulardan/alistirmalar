@@ -92,7 +92,7 @@ const swiper1 = new Swiper('.secondSwiper', {
      
 });
 const swiper2 = new Swiper('.thirdswiper', {
-    slidesPerView: 1,
+    slidesPerView: 1.4,
     spaceBetween: 20,
     slidesOffsetBefore: 0,
     direction: 'horizontal',
