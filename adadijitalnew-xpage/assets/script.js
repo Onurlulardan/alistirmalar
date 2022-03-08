@@ -28,7 +28,7 @@ document.addEventListener('click', () => {
 })
 
 var swiperf = new Swiper('.firstSwiper', {
-    slidesPerView: 1,
+    slidesPerView: 1.7,
     centeredSlides: true,
     pagination: {
         el: ".albumSlide .swiper-pagination",
