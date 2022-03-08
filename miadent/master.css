@@ -1822,6 +1822,7 @@ p {
   .bread-header > h1 {
     bottom: 50px;
     left: 0%;
+    height: 50px;
   }
   footer {
     padding-top: 0px;
@@ -1926,6 +1927,9 @@ p {
   }
 }
 @media only screen and (max-width: 550px) {
+  .inner-menu {
+    padding: 0px 0px !important;
+  }
   .footer-mobil-bottom-end {
     display: flex;
   }
